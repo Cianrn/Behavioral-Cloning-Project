@@ -64,7 +64,7 @@ Examining the camera images further, we can see that a large proportion of the t
 ### Network Architecture
 In this project we employed NVIDIA's CNN architecture shown in the image below. The same network is used for both steering and velocity predictions. It comprises of nine layers. This includes a normalization layer at the beginning, five convolutional layers and finally three fully connected layers. Relu activation function is used for each convolutional layer. The first three convolutions use a 2x2 stride and 5x5 kernels whereas the last two use 3x3 kernels, also shown in the image below.
 
-<img src="output_images/cnn-nvidia.png" width="250" align="center" />
+<img src="output_images/CNN-Architecture.png" width="400" height="400" align="center" />
 
 ## 3. Training and Validation
 
