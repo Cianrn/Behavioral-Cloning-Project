@@ -53,9 +53,9 @@ Normalization was used to achieve a well-conditioned problem with zero mean and 
 
 TTo account for bias in the dataset and double our training data, we horizontally flipped each image and corresponding steering angle (i.e. multiply by -1). The images below demonstrate normal and flipped images from the center (top), left (middle) and right (bottom) cameras.
 
-<td> <img src="output_images/output_2_1.png" alt = "Drawing" style = "width: 300px;"/> </td>
-<td> <img src="output_images/output_2_2.png" alt = "Drawing" style = "width: 300px;"/> </td>
-<td> <img src="output_images/output_2_3.png" alt = "Drawing" style = "width: 300px;"/> </td>
+<td> <img src="output_images/output_2_1.png" alt = "Drawing" style = "width: 100px;"/> </td>
+<td> <img src="output_images/output_2_2.png" alt = "Drawing" style = "width: 100px;"/> </td>
+<td> <img src="output_images/output_2_3.png" alt = "Drawing" style = "width: 100px;"/> </td>
 
 Examining the camera images further, we can see that a large proportion of the top half of the image includes sky, trees etc. This is largely irrelevant for our CNN which should focus on road marking, road texture, lane lines etc. As a result, we removed the top half from each image. We also removed the bottom portion as the vehicle bonnet is also an irrelevant feature. Example copeed images are shown below:
 
