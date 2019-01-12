@@ -63,40 +63,7 @@ def reverse(image, angle):
 
 	return aug_image, aug_ang
 
-path1 = 'Train/Log_T1_F1.csv' 
-path2 = 'Train/Log_T1_F2.csv'  
-path3 = 'Train/Log_T1_F3.csv' 
-path4 = 'Train/Log_T1_F4.csv' 
-path5 = 'Train/Log_T1_F5.csv' 
-path6 = 'Train/Log_T1_F6.csv' 
-path7 = 'Train/Log_T1_F7.csv' 
-path8 = 'Train/Log_T1_F8.csv' 
-
-# path9 = 'Train/Log_T2_F1.csv'  
-# path10 = 'Train/Log_T2_F2.csv' 
-path11 = 'Train/Log_T2_F3.csv' 
-path12 = 'Train/Log_T2_F4.csv' 
-path13 = 'Train/Log_T2_F5.csv' 
-path14 = 'Train/Log_T2_F6.csv' 
-path15 = 'Train/Log_T2_F7.csv'
-path16 = 'Train/Log_T2_F8.csv'
-
-path17 = 'Train/Log_T3_F1.csv'  
-path18 = 'Train/Log_T3_F2.csv' 
-path19 = 'Train/Log_T3_F3.csv' 
-path20 = 'Train/Log_T3_F4.csv' 
-path21 = 'Train/Log_T3_F5.csv' 
-path22 = 'Train/Log_T3_F6.csv' 
-path23 = 'Train/Log_T3_F7.csv'
-path24 = 'Train/Log_T3_F8.csv'
-
-path25 = 'Train/Log_T1_R1.csv'
-path26 = 'Train/Log_T2_R1.csv'
-path27 = 'Train/Log_T3_R1.csv'
-
-paths = [path1, path2, path3, path4, path5, path6, path7, path8,
-		path11, path12, path13, path14, path15, path16, path17, path18, path19, path20,
-		path21, path22, path23, path24, path25, path26, path27]
+paths = 'Train/Log_T1_F1.csv' 
 
 data_reader(paths)
 
@@ -150,90 +117,9 @@ def generator(samples, batch_size):
 
 
 					current_path1 = 'Train/IMG_T1_F1/' + filename 
-					current_path2 = 'Train/IMG_T1_F2/' + filename 
-					current_path3 = 'Train/IMG_T1_F3/' + filename 
-					current_path4 = 'Train/IMG_T1_F4/' + filename
-					current_path5 = 'Train/IMG_T1_F5/' + filename
-					current_path6 = 'Train/IMG_T1_F6/' + filename 
-					current_path7 = 'Train/IMG_T1_F7/' + filename
-					current_path8 = 'Train/IMG_T1_F8/' + filename
-
-					current_path9 = 'Train/IMG_T2_F1/' + filename
-					current_path10 = 'Train/IMG_T2_F2/' + filename
-					current_path11 = 'Train/IMG_T2_F3/' + filename
-					current_path12 = 'Train/IMG_T2_F4/' + filename
-					current_path13 = 'Train/IMG_T2_F5/' + filename 
-					current_path14 = 'Train/IMG_T2_F6/' + filename
-					current_path15 = 'Train/IMG_T2_F7/' + filename
-					current_path16 = 'Train/IMG_T2_F8/' + filename
-
-					current_path17 = 'Train/IMG_T3_F1/' + filename
-					current_path18 = 'Train/IMG_T3_F2/' + filename
-					current_path19 = 'Train/IMG_T3_F3/' + filename
-					current_path20 = 'Train/IMG_T3_F4/' + filename
-					current_path21 = 'Train/IMG_T3_F5/' + filename 
-					current_path22 = 'Train/IMG_T3_F6/' + filename
-					current_path23 = 'Train/IMG_T3_F7/' + filename
-					current_path24 = 'Train/IMG_T3_F8/' + filename
-
-					current_path25 = 'Train/IMG_T1_R1/' + filename
-					current_path26 = 'Train/IMG_T2_R1/' + filename
-					current_path27 = 'Train/IMG_T3_R1/' + filename
 
 					if os.path.exists(current_path1) == True:
-						image = cv2.imread(current_path1)
-					elif os.path.exists(current_path2) == True:
-						image = cv2.imread(current_path2)
-					elif os.path.exists(current_path3) == True:
-						image = cv2.imread(current_path3)
-					elif os.path.exists(current_path4) == True:
-						image = cv2.imread(current_path4)
-					elif os.path.exists(current_path5) == True:
-						image = cv2.imread(current_path5)
-					elif os.path.exists(current_path6) == True:
-						image = cv2.imread(current_path6)
-					elif os.path.exists(current_path7) == True:
-						image = cv2.imread(current_path7)
-					elif os.path.exists(current_path8) == True:
-						image = cv2.imread(current_path8)
-					elif os.path.exists(current_path9) == True:
-						image = cv2.imread(current_path9)	
-					elif os.path.exists(current_path10) == True:
-						image = cv2.imread(current_path10)	
-					elif os.path.exists(current_path11) == True:
-						image = cv2.imread(current_path11)
-					elif os.path.exists(current_path12) == True:
-						image = cv2.imread(current_path12)
-					elif os.path.exists(current_path13) == True:
-						image = cv2.imread(current_path13)
-					elif os.path.exists(current_path14) == True:
-						image = cv2.imread(current_path14)
-					elif os.path.exists(current_path15) == True:
-						image = cv2.imread(current_path15)	
-					elif os.path.exists(current_path16) == True:
-						image = cv2.imread(current_path16)
-					elif os.path.exists(current_path17) == True:
-						image = cv2.imread(current_path17)
-					elif os.path.exists(current_path18) == True:
-						image = cv2.imread(current_path18)
-					elif os.path.exists(current_path19) == True:
-						image = cv2.imread(current_path19)
-					elif os.path.exists(current_path20) == True:
-						image = cv2.imread(current_path20)
-					elif os.path.exists(current_path21) == True:
-						image = cv2.imread(current_path21)
-					elif os.path.exists(current_path22) == True:
-						image = cv2.imread(current_path22)
-					elif os.path.exists(current_path23) == True:
-						image = cv2.imread(current_path23)
-					elif os.path.exists(current_path24) == True:
-						image = cv2.imread(current_path24)
-					elif os.path.exists(current_path25) == True:
-						image = cv2.imread(current_path25)
-					elif os.path.exists(current_path26) == True:
-						image = cv2.imread(current_path26)
-					else:
-						image = cv2.imread(current_path27)	
+						image = cv2.imread(current_path1)	
 		
 					image = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
 					image = brightness(image)
