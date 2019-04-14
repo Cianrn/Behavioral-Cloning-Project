@@ -1,8 +1,4 @@
-# Self-Driving Car Engineer Nanodegree
-
-## Deep Learning
-
-## Project: Behaviour Cloning with Convolutional Neural Networks
+# Behaviour Cloning with Convolutional Neural Networks
 ***
 
 
